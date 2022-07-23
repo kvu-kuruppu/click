@@ -27,6 +27,8 @@ class _NinjaCardState extends State<NinjaCard> {
               color: Colors.yellow,
               letterSpacing: 25.0,
               fontSize: 30.0,
+              fontFamily: 'HoboStd',
+              fontWeight: FontWeight.w800,
             )),
         centerTitle: true,
         backgroundColor: Colors.red,
@@ -51,7 +53,7 @@ class _NinjaCardState extends State<NinjaCard> {
               'Hey Dude',
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: Colors.amber,
+                color: Colors.white60,
                 letterSpacing: 3.0,
                 fontSize: 28.0,
                 fontWeight: FontWeight.bold,
@@ -71,7 +73,7 @@ class _NinjaCardState extends State<NinjaCard> {
               'Click the button below',
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: Colors.amber,
+                color: Colors.white60,
                 letterSpacing: 3.0,
                 fontSize: 25.0,
                 fontWeight: FontWeight.bold,
@@ -83,7 +85,7 @@ class _NinjaCardState extends State<NinjaCard> {
             Text(
               'You have clicked',
               style: TextStyle(
-                color: Colors.amber,
+                color: Colors.orange[300],
                 letterSpacing: 3.0,
                 fontSize: 28.0,
                 fontWeight: FontWeight.bold,
@@ -96,19 +98,21 @@ class _NinjaCardState extends State<NinjaCard> {
                 Text(
                   '$clickTimes ',
                   style: TextStyle(
-                    color: Colors.amber,
+                    color: Colors.white,
                     letterSpacing: 3.0,
                     fontSize: 50.0,
                     fontWeight: FontWeight.bold,
+                    fontFamily: 'MATURASC',
                   ),
                 ),
                 Text(
                   'times',
                   style: TextStyle(
-                    color: Colors.amber,
+                    color: Colors.blueGrey[100],
                     letterSpacing: 3.0,
-                    fontSize: 40.0,
+                    fontSize: 50.0,
                     fontWeight: FontWeight.bold,
+                    fontFamily: 'PRISTINA',
                   ),
                 ),
               ],
