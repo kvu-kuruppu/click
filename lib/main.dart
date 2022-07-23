@@ -46,17 +46,6 @@ class _NinjaCardState extends State<NinjaCard> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Center(
-              child: CircleAvatar(
-                backgroundImage: AssetImage(
-                    'assets/images.jpeg'
-                ),
-                radius: 60.0,
-              ),
-            ),
-            Divider(
-              height: 60.0,
-            ),
             SizedBox(height: 10.0),
             Text(
               'Hey Dude',
@@ -69,17 +58,28 @@ class _NinjaCardState extends State<NinjaCard> {
               )
             ),
             SizedBox(height: 10.0),
+            Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage(
+                    'assets/images.jpeg'
+                ),
+                radius: 60.0,
+              ),
+            ),
+            SizedBox(height: 30.0),
             Text(
               'Click the button below',
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.amber,
                 letterSpacing: 3.0,
-                fontSize: 30.0,
+                fontSize: 25.0,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 30.0),
+            Divider(
+              height: 40.0,
+            ),
             Text(
               'You have clicked',
               style: TextStyle(
@@ -89,14 +89,29 @@ class _NinjaCardState extends State<NinjaCard> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Text(
-              '$clickTimes times',
-              style: TextStyle(
-                color: Colors.amber,
-                letterSpacing: 3.0,
-                fontSize: 40.0,
-                fontWeight: FontWeight.bold,
-              ),
+            SizedBox(height: 10.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  '$clickTimes ',
+                  style: TextStyle(
+                    color: Colors.amber,
+                    letterSpacing: 3.0,
+                    fontSize: 50.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  'times',
+                  style: TextStyle(
+                    color: Colors.amber,
+                    letterSpacing: 3.0,
+                    fontSize: 40.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
             ),
           ],
         ),
